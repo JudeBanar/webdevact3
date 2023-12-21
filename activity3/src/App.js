@@ -10,7 +10,12 @@ function App() {
   }
 
   const decreaseNumbr = () => {
-    setNumbr(numbr - 1);
+    if (numbr === 0){
+      setNumbr(0)
+    }
+    else{
+      setNumbr(numbr - 1);
+    }
   }
 
   const resetNumbr = () => {
